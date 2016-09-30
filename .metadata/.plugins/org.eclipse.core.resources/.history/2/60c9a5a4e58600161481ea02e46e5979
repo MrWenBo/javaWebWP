@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Get Json and html document</title>
+    </head>
+    <body>
+    		<form action="/webFrame/users/getHtml" method="post">
+  			<p>Name: <input type="text" name="name" /></p>
+  			<p>Password: <input type="text" name="password" /></p>
+  			<input type="submit" value="Submit" />
+		</form>
+    </body>
+</html>

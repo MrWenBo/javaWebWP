@@ -41,6 +41,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\TouchWorkspace\spring-jdbc"/>
+			<item value="E:\Download\spring-webframework"/>
 			<item value="D:\TouchWorkspace"/>
 			<item value="C:\Users\Administrator\Desktop\javaweb\spring-container"/>
 		</list>

@@ -1,0 +1,6 @@
+package com.mes.meta;
+
+public class User {
+	private int userid;
+	private String username;
+}

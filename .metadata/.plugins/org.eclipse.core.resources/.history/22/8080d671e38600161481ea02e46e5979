@@ -1,0 +1,26 @@
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>返回的HTML文档基于FreeMarker生成</title>
+    </head>
+    <body>
+        <h4>用户返回表：</h4>
+        <table border="1">
+            <tr>
+              <td>---</td>
+              <td>userid</td>
+              <td>username</td>
+            </tr>
+            <tr>
+              <td>user1</td>
+              <td>${userId1}</td>
+              <td>${userName1}</td>
+            </tr>
+            <tr>
+              <td>user2</td>
+              <td>${userId2}</td>
+              <td>${userName2}</td>
+            </tr>
+        </table>
+    </body>
+</html>
