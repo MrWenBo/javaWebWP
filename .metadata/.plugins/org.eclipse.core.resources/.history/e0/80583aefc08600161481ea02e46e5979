@@ -1,0 +1,42 @@
+package com.mes.test;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.mes.dao.UserDao;
+import com.mes.meta.User;
+
+public class TestUser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext context = new ClassPathXmlApplicationContext("application-context.xml");
+
+		UserDao userDao = context.getBean("userDao", UserDao.class);
+		
+		//userDao.creatTable();
+		
+		User user = new User(1001,"Veronus");
+		User user1 = new User(1002,"Love caven");
+		User user2 = new User(1003,"Joe");
+		
+		userDao.insertUser(user);
+		userDao.insertUser(user1);
+		userDao.insertUser(user2);
+		
+		
+		
+		List<User> users = userDao.getUserList();
+		for (User user3 : users) {
+			System.out.println(user3.getUserid()+" name is: "+user3.getUsername());
+		}
+	
+		
+		((ConfigurableApplicationContext) context).close();
+
+	}
+
+}

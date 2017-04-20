@@ -1,0 +1,31 @@
+package com.mes.test;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.mes.dao.UserDao;
+import com.mes.meta.User;
+
+public class TestUser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext context = new ClassPathXmlApplicationContext("application-context.xml");
+
+		UserDao userDao = context.getBean("userDao", UserDao.class);
+		
+		//userDao.creatTable();
+		
+		User user = new User();
+		
+		//List<User> userBalances = userDao.getUserList();
+	
+		
+		((ConfigurableApplicationContext) context).close();
+
+	}
+
+}
